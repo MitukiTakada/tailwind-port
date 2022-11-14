@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+.btn {
+  @apply font-bold py-2 px-4 rounded text-white ml-10;
+}
+.btn:hover {
+  @apply bg-blue-900 text-white
+}
+
+.secondary-title {
+  @apply text-3xl font-bold;
+}
+
+.secondary-title::before {
+  content: "";
+  @apply block w-12 h-2 bg-theme rounded-full mb-1;
+}
+
+.section-paragraph {
+  @apply text-secondary my-6 w-full max-w-3xl;
+}
+.badge {
+  @apply px-4 py-2 text-sm bg-badge
+}
